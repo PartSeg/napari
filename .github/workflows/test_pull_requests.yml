@@ -208,7 +208,7 @@ jobs:
       - name: Install this commit
         run: |
           pip install --upgrade pip
-          pip install setuptools tox tox-gh-actions
+          pip install setuptools tox>3 tox-gh-actions
 
       - name: Test
         uses: aganders3/headless-gui@v1
